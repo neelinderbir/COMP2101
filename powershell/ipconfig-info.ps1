@@ -13,10 +13,10 @@ $report = foreach ($adapterobj in $adapterobjs) {
     [PSCustomObject]@{
         "Adapter Description" = $adapterobj.Description
         "Index" = $adapterobj.Index
-        "IP Address(es)" = $adapterobj.IPAddress
-        "Subnet Mask(s)" = $adapterobj.IPSubnet
+        "IP Address" = $adapterobj.IPAddress
+        "Subnet Mask" = $adapterobj.IPSubnet
         "DNS Domain Name" = $adapterobj.DNSDomain
-        "DNS Server(s)" = $adapterobj.DNSServerSearchOrder
+        "DNS Server" = $adapterobj.DNSServerSearchOrder
 #     "MAC Address " = $adapterobj.MACAddress
     }
 }
